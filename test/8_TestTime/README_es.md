@@ -13,7 +13,7 @@ Este contrato de Solidity (`Auction.t.sol`) contiene las pruebas unitarias para 
 
 *   **`pragma solidity ^0.8.24;`**: Define la versión del compilador de Solidity.
 *   **`import "forge-std/Test.sol";`**: Importa la biblioteca de pruebas estándar de Foundry.
-*   **`import "../../src/8_ProbarTiempo/Auction.sol";`**: Importa el contrato que se va a probar.
+*   **`import "../../src/8_TestTime/Auction.sol";`**: Importa el contrato que se va a probar.
 *   **`contract AuctionTest is Test { ... }`**: Declaración del contrato de prueba, que hereda de `Test`.
 *   **`setUp()`**: Función especial que se ejecuta antes de cada prueba. Ideal para inicializar el estado.
 *   **`vm.warp(timestamp)`**: Cheat code para establecer la marca de tiempo del bloque actual.

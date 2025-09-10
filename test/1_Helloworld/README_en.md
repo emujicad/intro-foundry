@@ -32,7 +32,7 @@ This Solidity contract (`helloworld.t.sol`) contains the unit tests for the `hel
 To run these tests, you will need to have Foundry installed. Navigate to your project's root directory and run:
 
 ```bash
-forge test
+forge test --match-path test/1_Helloworld/helloworld.t.sol -vvvvv
 ```
 
 Foundry will compile the contracts and execute all test functions. The results will indicate whether the tests passed or failed, helping you verify the logic of your `helloworld` contract.

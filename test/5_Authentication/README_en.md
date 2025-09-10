@@ -14,7 +14,7 @@ This Solidity contract (`Wallet.t.sol`) contains the unit tests for the `Wallet.
 
 *   **`pragma solidity ^0.8.24;`**: Defines the Solidity compiler version.
 *   **`import "forge-std/Test.sol";`**: Imports Foundry's standard test library.
-*   **`import "../src/Wallet.sol";`**: Imports the `Wallet` contract to be tested.
+*   **`import "../../src/5_Authentication/Wallet.sol";`**: Imports the `Wallet` contract to be tested.
 *   **`contract WalletTest is Test { ... }`**: Declaration of the test contract, inheriting from `Test`.
 *   **`setUp()`**: Special function executed before each test to set up the environment.
 *   **`vm.prank(address account);`**: Foundry cheat code to simulate that the next function call comes from the specified `account`. It's crucial for testing access control.
@@ -46,3 +46,4 @@ forge test
 Foundry will compile the contracts and execute all test functions. The results will indicate whether the tests passed or failed, helping you verify the access control logic of your `Wallet` contract.
 
 This test contract is an essential resource for learning how to test security and permissions in Solidity, critical skills for building robust and reliable smart contracts.
+bust and reliable smart contracts.

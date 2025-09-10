@@ -27,7 +27,7 @@ The `testLog()` function simply declares an integer variable `x` and then uses `
 To run this test and see the `console.log` output, you will need Foundry installed. Navigate to your project's root directory and run:
 
 ```bash
-forge test --match-path test/ConsoletTest.t.sol -vvvv
+forge test --match-path test/4_Console/ConsoletTest.t.sol -vvvvv
 ```
 
 The `-vvvv` flag (or `-v` with more `v`s) increases the verbosity of Foundry's output, which is necessary to see `console.log` messages.

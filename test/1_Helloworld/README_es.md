@@ -13,7 +13,7 @@ Este contrato de Solidity (`helloworld.t.sol`) contiene las pruebas unitarias pa
 *   **`pragma solidity ^0.8.13;`**: Define la versión del compilador de Solidity.
 *   **`import {Test, console, stdError} from "forge-std/Test.sol";`**: Importa componentes específicos de la biblioteca de pruebas estándar de Foundry.
     *   **`Test`**: El contrato base para escribir pruebas.
-*   **`import {helloworld} from "../../src/1_helloworld/helloworld.sol";`**: Importa el contrato `helloworld` que se va a probar. La ruta relativa es importante.
+*   **`import {helloworld} from "../../src/1_Helloworld/helloworld.sol";`**: Importa el contrato `helloworld` que se va a probar. La ruta relativa es importante.
 *   **`contract helloworldTest is Test { ... }`**: Declaración del contrato de prueba, que hereda de `Test`.
 *   **`setUp()`**: Función especial que se ejecuta antes de cada función de prueba para configurar el entorno.
 *   **`assertEq(expected, actual, "mensaje de error");`**: Función de aserción para verificar que dos valores son iguales. Si no lo son, la prueba falla y se muestra el mensaje de error opcional.
