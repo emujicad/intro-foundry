@@ -13,7 +13,7 @@ This Solidity contract (`Auction.t.sol`) contains the unit tests for the `CAucti
 
 *   **`pragma solidity ^0.8.24;`**: Defines the Solidity compiler version.
 *   **`import "forge-std/Test.sol";`**: Imports Foundry's standard test library.
-*   **`import "../src/Auction.sol";`**: Imports the contract to be tested.
+*   **`import "../../src/8_TestTime/Auction.sol";`**: Imports the contract to be tested.
 *   **`contract AuctionTest is Test { ... }`**: Declaration of the test contract, inheriting from `Test`.
 *   **`setUp()`**: Special function executed before each test. Ideal for initializing state.
 *   **`vm.warp(timestamp)`**: Cheat code to set the current block's timestamp.

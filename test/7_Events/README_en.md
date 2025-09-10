@@ -39,7 +39,7 @@ This Solidity contract (`Events.t.sol`) contains the unit tests for the `CEvents
 To run these tests, you will need to have Foundry installed. Navigate to your project's root directory and run:
 
 ```bash
-forge test
+forge test --match-path test/7_Events/Events.t.sol -vvvvv
 ```
 
 Foundry will compile the contracts and execute all test functions. The results will indicate whether the tests passed or failed, helping you verify the event emission logic of your `CEvents` contract.

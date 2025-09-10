@@ -35,7 +35,7 @@ This Solidity contract (`Errors.t.sol`) contains the unit tests for the `CErrors
 To run these tests, you will need to have Foundry installed. Navigate to your project's root directory and run:
 
 ```bash
-forge test
+forge test --match-path test/6_Errors/Errors.t.sol -vvvvv
 ```
 
 Foundry will compile the contracts and execute all test functions. The results will indicate whether the tests passed or failed, helping you verify the error handling logic of your `CErrors` contract.

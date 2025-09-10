@@ -14,7 +14,7 @@ This Solidity contract (`SendEther.t.sol`) contains the unit tests for the `Send
 
 *   **`pragma solidity ^0.8.24;`**: Defines the Solidity compiler version.
 *   **`import "forge-std/Test.sol";`**: Imports Foundry's standard test library.
-*   **`import "../src/SendEther.sol";`**: Imports the `SendEther` contract to be tested.
+*   **`import "../../src/9_SendEther/SendEther.sol";`**: Imports the `SendEther` contract to be tested.
 *   **`contract SendEtherTest is Test { ... }`**: Declaration of the test contract, inheriting from `Test`.
 *   **`setUp()`**: Special function executed before each test to set up the environment.
 *   **`address(contractInstance).call{value: amount}("");`**: A low-level way to interact with contracts, especially useful for sending Ether. `value: amount` specifies the amount of Ether.

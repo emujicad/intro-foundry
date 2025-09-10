@@ -40,7 +40,7 @@ This Solidity contract (`Wallet.t.sol`) contains the unit tests for the `Wallet.
 To run these tests, you will need to have Foundry installed. Navigate to your project's root directory and run:
 
 ```bash
-forge test
+forge test --match-path test/5_Authentication/Wallet.t.sol -vvvvv
 ```
 
 Foundry will compile the contracts and execute all test functions. The results will indicate whether the tests passed or failed, helping you verify the access control logic of your `Wallet` contract.
