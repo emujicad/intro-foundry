@@ -30,6 +30,6 @@ To run these tests, you will need to have Foundry installed and an RPC URL for t
 forge test --fork-url <YOUR_RPC_URL> --match-path test/10_ExecuteMainnet/Fork.t.sol -vvv
 ```
 
-Replace `<YOUR_RPC_URL>` with your actual RPC URL.  Example: forge test --fork-url https://eth-mainnet.g.alchemy.com/v2/rWQAOZwUSF6-eBK-YPy3P --match-path test/ExecuteMainnet/Fork.t.sol -vvv
+Replace `<YOUR_RPC_URL>` with your actual RPC URL.  Example: forge test --fork-url https://eth-mainnet.g.alchemy.com/v2/rWQAOZwUSF6-eBK-YPy3P --match-path test/10_ExecuteMainnet/Fork.t.sol -vvv
 
 This test contract is an excellent resource for learning how to test smart contracts that interact with other protocols on the Ethereum mainnet, a crucial skill for any serious Web3 developer.
