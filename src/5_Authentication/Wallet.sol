@@ -3,7 +3,7 @@
 pragma solidity ^0.8.24;
 // This line declares the Solidity compiler version. The contract will compile with versions from 0.8.24 up to (but not including) 0.9.0.
 
-contract Wallet{
+contract Wallet {
     // This declares a new smart contract named 'Wallet'.
     // This contract functions as a simple Ether wallet, allowing an owner to receive and withdraw Ether.
     // It's a basic example to understand how to manage funds in a smart contract.
@@ -21,8 +21,8 @@ contract Wallet{
         // 'msg.sender' is a global variable in Solidity that represents the address of the account
         // that initiated the current transaction.
         // Here, the deployer of the contract is set as the initial 'owner'.
-
     }
+
     receive() external payable {
         // The 'receive()' function is a special fallback function that is executed when a contract
         // receives plain Ether (without any function call data).

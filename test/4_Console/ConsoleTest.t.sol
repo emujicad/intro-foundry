@@ -13,17 +13,13 @@ contract ConsoleTest is Test {
     // 'is Test' means that 'ConsoleTest' inherits from the 'Test' contract,
     // gaining access to all its testing utilities, including console logging.
 
-    uint256 public number;
-    // This declares a state variable 'number'. While present, it's not used in the current test function,
-    // but it shows that test contracts can have state variables.
-
     function testLog() public pure {
         // This test function demonstrates the use of `console.log` for debugging and logging.
         // 'public' means this function can be called from anywhere.
         // 'pure' means this function does not read from or modify the state of the blockchain.
         // It's a good practice to use `pure` when a function's logic doesn't depend on or change any state variables.
 
-        int x = -1;
+        int256 x = -1;
         // Declares a signed integer variable 'x' and initializes it to -1.
 
         console.log("Log from test", x);

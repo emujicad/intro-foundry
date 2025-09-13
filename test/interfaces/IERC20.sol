@@ -14,11 +14,7 @@ interface IERC20 {
     event Transfer(address indexed from, address indexed to, uint256 value);
 
     // Emitted when an owner approves a spender to withdraw a certain amount of tokens.
-    event Approval(
-        address indexed _owner,
-        address indexed spender,
-        uint256 value
-    );
+    event Approval(address indexed _owner, address indexed spender, uint256 value);
 
     // These are the six mandatory functions that an ERC20 token contract must implement.
 
@@ -29,24 +25,14 @@ interface IERC20 {
     function balanceOf(address account) external view returns (uint256);
 
     // Transfers a certain amount of tokens from the caller's account to a recipient.
-    function transfer(
-        address recipient,
-        uint256 amount
-    ) external returns (bool);
+    function transfer(address recipient, uint256 amount) external returns (bool);
 
     // Returns the remaining number of tokens that a spender is allowed to withdraw from an owner's account.
-    function allowance(
-        address owner,
-        address spender
-    ) external view returns (uint256);
+    function allowance(address owner, address spender) external view returns (uint256);
 
     // Allows a spender to withdraw a certain amount of tokens from the caller's account.
     function approve(address spender, uint256 amount) external returns (bool);
 
     // Transfers a certain amount of tokens from a sender's account to a recipient, using the allowance mechanism.
-    function transferFrom(
-        address sender,
-        address recipient,
-        uint256 amount
-    ) external returns (bool);
+    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
 }

@@ -30,7 +30,7 @@ contract ErrorTest is Test {
         // Each test will get its own fresh instance of the contract.
     }
 
-    function test_withoutRevert_ThrowError() public view{
+    function test_withoutRevert_ThrowError() public view {
         // This test function demonstrates what happens if you call a function that is expected to revert,
         // but you do not use `vm.expectRevert()`.
         // This test is designed to fail to show the importance of `vm.expectRevert`.
@@ -41,7 +41,7 @@ contract ErrorTest is Test {
         // causing the test to fail if `vm.expectRevert` is not used.
     }
 
-    function testRevert_ThrowError() public{
+    function testRevert_ThrowError() public {
         // This test function correctly checks if `throwError()` reverts.
 
         vm.expectRevert();
@@ -52,7 +52,7 @@ contract ErrorTest is Test {
         // This calls the `throwError()` function. We expect it to revert, so this test should pass.
     }
 
-    function testRevert_RequireMessageThrowError() public{
+    function testRevert_RequireMessageThrowError() public {
         // This test function checks if `throwError()` reverts with a specific string message.
 
         vm.expectRevert(bytes("UnAuthorized...!"));
@@ -64,7 +64,7 @@ contract ErrorTest is Test {
         // so this test should pass.
     }
 
-    function testRevert_ThrowCustomError() public{
+    function testRevert_ThrowCustomError() public {
         // This test function checks if `throwCustomError()` reverts with a specific custom error.
 
         vm.expectRevert(CErrors.UnAuthorized.selector);
@@ -93,5 +93,5 @@ contract ErrorTest is Test {
         // but they are commented out to allow the `assertEq` failures to be demonstrated.
         //vm.expectRevert(CErrors.UnAuthorized.selector); // Expect a revert with the custom error UnAuthorized
         //cerr.throwCustomError(); // Call the function that should revert.
-    }  
+    }
 }

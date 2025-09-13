@@ -48,7 +48,7 @@ contract SendEtherTest is Test {
         // Ensures that the test contract itself has enough Ether to send.
 
         // Send ether to the SendEther contract using low-level call
-        (bool success, ) = address(sendEther).call{value: _amount}("");
+        (bool success,) = address(sendEther).call{value: _amount}("");
         // This line uses a low-level `call` to send Ether to the `sendEther` contract.
         // `call` is a more flexible and recommended way to send Ether to contracts compared to `transfer()` or `send()`,
         // especially when interacting with contracts that might have complex `receive()` or `fallback()` functions.
@@ -66,10 +66,10 @@ contract SendEtherTest is Test {
         // This function demonstrates how to use `console.log` to inspect Ether balances during tests.
         // 'public view' means it can be called from anywhere and does not modify the blockchain state.
 
-        console.log("Current this.balance:", address(this).balance/1e18, "ETH");
+        console.log("Current this.balance:", address(this).balance / 1e18, "ETH");
         // Logs the Ether balance of the current test contract. `1e18` converts Wei to Ether.
 
-        console.log("Current sendEther.balance:", address(sendEther).balance/1e18, "ETH");
+        console.log("Current sendEther.balance:", address(sendEther).balance / 1e18, "ETH");
         // Logs the Ether balance of the `sendEther` contract.
     }
 
@@ -81,8 +81,8 @@ contract SendEtherTest is Test {
         // Stores the initial Ether balance of the test contract.
 
         console.log("Before sendEther.owner address:", sendEther.owner());
-        console.log("Before this.balance:", address(this).balance/1e18, "ETH");
-        console.log("Before sendEther.balance:", address(sendEther).balance/1e18, "ETH");
+        console.log("Before this.balance:", address(this).balance / 1e18, "ETH");
+        console.log("Before sendEther.balance:", address(sendEther).balance / 1e18, "ETH");
         // Logs balances before the transfer for debugging.
 
         uint256 amount = 1 ether;
@@ -92,8 +92,8 @@ contract SendEtherTest is Test {
         // Calls our helper function to send Ether to the `sendEther` contract.
 
         console.log("After sendEther.owner address:", sendEther.owner());
-        console.log("After this.balance:", address(this).balance/1e18, "ETH");
-        console.log("After sendEther.balance:", address(sendEther).balance/1e18, "ETH");
+        console.log("After this.balance:", address(this).balance / 1e18, "ETH");
+        console.log("After sendEther.balance:", address(sendEther).balance / 1e18, "ETH");
         // Logs balances after the transfer for debugging.
 
         // Assert that the SendEther contract received the correct amount
@@ -101,7 +101,7 @@ contract SendEtherTest is Test {
         // Asserts that the `sendEther` contract's balance is now equal to the amount sent.
 
         // Assert that this contract's balance decreased by the sent amount
-        assertEq(address(this).balance, initialBalance - amount, "Test contract should have reduced balance"); 
+        assertEq(address(this).balance, initialBalance - amount, "Test contract should have reduced balance");
     }
 
     // Test sending Ether from a different address to the SendEther contract

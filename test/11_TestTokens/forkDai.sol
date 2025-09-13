@@ -61,4 +61,4 @@ contract ForkDaiTest is Test {
         // It is asserted that the total supply remains unchanged, as the 'deal' cheatcode only affects the balance of the specified account.
         assert(finalTotal == initialTotal);
     }
-}  
+}

@@ -50,9 +50,9 @@ contract AuctionTest is Test {
         start = block.timestamp + 1 days; // Auction starts now
         // Sets a 'start' timestamp for testing purposes, 1 day from the current block.
         end = block.timestamp + 2 days; // Auction lasts for 2 days
-        // Sets an 'end' timestamp for testing purposes, 2 days from the current block.
-        // Note: The `CAuction` contract itself calculates `startAuction` and `endAuction` based on its deployment time.
-        // These `start` and `end` variables in the test are for controlling the test environment's time.
+            // Sets an 'end' timestamp for testing purposes, 2 days from the current block.
+            // Note: The `CAuction` contract itself calculates `startAuction` and `endAuction` based on its deployment time.
+            // These `start` and `end` variables in the test are for controlling the test environment's time.
     }
 
     function testOfferBeforeAuctionStarts() public {
@@ -101,7 +101,7 @@ contract AuctionTest is Test {
     function testTimestamp() public {
         // This test demonstrates how to manipulate and verify `block.timestamp` using Foundry's cheat codes.
 
-        uint t = block.timestamp;
+        uint256 t = block.timestamp;
         // Stores the current block's timestamp.
 
         skip(100);
@@ -124,7 +124,7 @@ contract AuctionTest is Test {
     function testBlockNumber() public {
         // This test demonstrates how to manipulate and verify `block.number` using Foundry's cheat codes.
 
-        uint b = block.number;
+        uint256 b = block.number;
         // Stores the current block's number.
 
         vm.roll(255);

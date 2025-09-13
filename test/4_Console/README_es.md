@@ -1,6 +1,6 @@
-# Pruebas de Consola (ConsoletTest.t.sol)
+# Pruebas de Consola (ConsoleTest.t.sol)
 
-Este contrato de Solidity (`ConsoletTest.t.sol`) es un ejemplo simple que demuestra cómo utilizar las funciones de `console.log` de Foundry para depurar y registrar información durante la ejecución de las pruebas. Es una herramienta invaluable para los desarrolladores de Solidity, ya que permite inspeccionar el estado y el flujo de ejecución de los contratos de manera similar a como se usaría `console.log` en JavaScript.
+Este contrato de Solidity (`ConsoleTest.t.sol`) es un ejemplo simple que demuestra cómo utilizar las funciones de `console.log` de Foundry para depurar y registrar información durante la ejecución de las pruebas. Es una herramienta invaluable para los desarrolladores de Solidity, ya que permite inspeccionar el estado y el flujo de ejecución de los contratos de manera similar a como se usaría `console.log` en JavaScript.
 
 ## Características Principales
 
@@ -27,7 +27,7 @@ La función `testLog()` simplemente declara una variable entera `x` y luego util
 Para ejecutar esta prueba y ver la salida de `console.log`, necesitarás tener Foundry instalado. Navega al directorio raíz de tu proyecto y ejecuta:
 
 ```bash
-forge test --match-path test/4_Console/ConsoletTest.t.sol -vvvvv
+forge test --match-path test/4_Console/ConsoleTest.t.sol -vvvvv
 ```
 
 El flag `-vvvv` (o `-v` con más `v`s) aumenta la verbosidad de la salida de Foundry, lo que es necesario para ver los mensajes de `console.log`.

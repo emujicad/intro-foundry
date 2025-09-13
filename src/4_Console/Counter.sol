@@ -19,6 +19,7 @@ contract Counter {
         // 'public' means this function can be called from anywhere (by users or other contracts).
         // This function allows you to set the value of the 'number' variable.
         number = newNumber;
+        console.log("Log from setNumber", newNumber); // This is a Foundry-specific cheat code for logging messages to the console during test execution.
     }
 
     function increment() public {

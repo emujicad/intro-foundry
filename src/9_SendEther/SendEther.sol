@@ -5,7 +5,7 @@ pragma solidity ^0.8.24;
 
 // This contract allows receiving, storing, and withdrawing Ether.
 // It also allows the owner to change ownership.
-contract SendEther{
+contract SendEther {
     // This declares a new smart contract named 'SendEther'.
     // This contract is designed to demonstrate how to handle Ether (the native cryptocurrency of Ethereum)
     // within a smart contract, including receiving, storing, and sending it.
