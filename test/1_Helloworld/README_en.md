@@ -13,7 +13,7 @@ This Solidity contract (`helloworld.t.sol`) contains the unit tests for the `hel
 *   **`pragma solidity ^0.8.13;`**: Defines the Solidity compiler version.
 *   **`import {Test, console, stdError} from "forge-std/Test.sol";`**: Imports specific components from Foundry's standard test library.
     *   **`Test`**: The base contract for writing tests.
-*   **`import {helloworld} from "../../src/helloworld/helloworld.sol";`**: Imports the `helloworld` contract to be tested. The relative path is important.
+*   **`import {helloworld} from "../../src/1_Helloworld/helloworld.sol";`**: Imports the `helloworld` contract to be tested. The relative path is important.
 *   **`contract helloworldTest is Test { ... }`**: Declaration of the test contract, inheriting from `Test`.
 *   **`setUp()`**: Special function executed before each test function to set up the environment.
 *   **`assertEq(expected, actual, "error message");`**: Assertion function to check if two values are equal. If not, the test fails, and the optional error message is displayed.

@@ -7,7 +7,7 @@ import "forge-std/Test.sol";
 // This line imports the 'Test.sol' contract from the 'forge-std' library.
 // 'forge-std' is a standard library for Foundry, providing essential utilities for writing tests in Solidity.
 
-import "../../src/6_Errors/Errors.sol";
+import "../../src/6_TestErrors/Errors.sol";
 // This line imports the 'CErrors.sol' contract from the 'src' directory.
 // This is the contract that we are going to test, which demonstrates different error handling mechanisms.
 

@@ -13,7 +13,7 @@ This Solidity contract (`Errors.t.sol`) contains the unit tests for the `CErrors
 
 *   **`pragma solidity ^0.8.24;`**: Defines the Solidity compiler version.
 *   **`import "forge-std/Test.sol";`**: Imports Foundry's standard test library.
-*   **`import "../../src/6_Errors/Errors.sol";`**: Imports the `CErrors` contract to be tested.
+*   **`import "../../src/6_TestErrors/Errors.sol";`**: Imports the `CErrors` contract to be tested.
 *   **`contract ErrorTest is Test { ... }`**: Declaration of the test contract, inheriting from `Test`.
 *   **`setUp()`**: Special function executed before each test to set up the environment, in this case, deploying a new instance of `CErrors`.
 *   **`vm.expectRevert();`**: Foundry cheat code that expects the next function call to revert, regardless of the message or error type.
@@ -35,7 +35,7 @@ This Solidity contract (`Errors.t.sol`) contains the unit tests for the `CErrors
 To run these tests, you will need to have Foundry installed. Navigate to your project's root directory and run:
 
 ```bash
-forge test --match-path test/6_Errors/Errors.t.sol -vvvvv
+forge test --match-path test/6_TestErrors/Errors.t.sol -vvvvv
 ```
 
 Foundry will compile the contracts and execute all test functions. The results will indicate whether the tests passed or failed, helping you verify the error handling logic of your `CErrors` contract.

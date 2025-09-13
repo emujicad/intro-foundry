@@ -13,7 +13,7 @@ This Solidity contract (`Events.t.sol`) contains the unit tests for the `CEvents
 
 *   **`pragma solidity ^0.8.24;`**: Defines the Solidity compiler version.
 *   **`import "forge-std/Test.sol";`**: Imports Foundry's standard test library.
-*   **`import "../../src/7_Events/Events.sol";`**: Imports the `CEvents` contract to be tested.
+*   **`import "../../src/7_TestEvents/Events.sol";`**: Imports the `CEvents` contract to be tested.
 *   **`contract EventsTest is Test { ... }`**: Declaration of the test contract, inheriting from `Test`.
 *   **`event Transfer(address indexed from, address indexed to, uint256 amount);`**: Re-declaration of the `Transfer` event in the test contract. This is crucial for `vm.expectEmit()` to correctly match the event.
 *   **`setUp()`**: Special function executed before each test to set up the environment, in this case, deploying a new instance of `CEvents`.
@@ -39,7 +39,7 @@ This Solidity contract (`Events.t.sol`) contains the unit tests for the `CEvents
 To run these tests, you will need to have Foundry installed. Navigate to your project's root directory and run:
 
 ```bash
-forge test --match-path test/7_Events/Events.t.sol -vvvvv
+forge test --match-path test/7_TestEvents/Events.t.sol -vvvvv
 ```
 
 Foundry will compile the contracts and execute all test functions. The results will indicate whether the tests passed or failed, helping you verify the event emission logic of your `CEvents` contract.

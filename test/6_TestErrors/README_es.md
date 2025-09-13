@@ -13,7 +13,7 @@ Este contrato de Solidity (`Errors.t.sol`) contiene las pruebas unitarias para e
 
 *   **`pragma solidity ^0.8.24;`**: Define la versión del compilador de Solidity.
 *   **`import "forge-std/Test.sol";`**: Importa la biblioteca de pruebas estándar de Foundry.
-*   **`import "../../src/6_Errors/Errors.sol";`**: Importa el contrato `CErrors` que se va a probar.
+*   **`import "../../src/6_TestErrors/Errors.sol";`**: Importa el contrato `CErrors` que se va a probar.
 *   **`contract ErrorTest is Test { ... }`**: Declaración del contrato de prueba, que hereda de `Test`.
 *   **`setUp()`**: Función especial que se ejecuta antes de cada prueba para configurar el entorno, en este caso, desplegando una nueva instancia de `CErrors`.
 *   **`vm.expectRevert();`**: Cheat code de Foundry que espera que la siguiente llamada a función revierta, sin importar el mensaje o tipo de error.
@@ -35,7 +35,7 @@ Este contrato de Solidity (`Errors.t.sol`) contiene las pruebas unitarias para e
 Para ejecutar estas pruebas, necesitarás tener Foundry instalado. Navega al directorio raíz de tu proyecto y ejecuta:
 
 ```bash
-forge test --match-path test/6_Errors/Errors.t.sol -vvvvv
+forge test --match-path test/6_TestErrors/Errors.t.sol -vvvvv
 ```
 
 Foundry compilará los contratos y ejecutará todas las funciones de prueba. Los resultados te indicarán si las pruebas pasaron o fallaron, lo que te ayudará a verificar la lógica de manejo de errores de tu contrato `CErrors`.

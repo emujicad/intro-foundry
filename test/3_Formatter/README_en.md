@@ -16,7 +16,7 @@ This Solidity contract (`Counter.t.sol`) contains the unit tests for the `Counte
     *   **`Test`**: The base contract for writing tests.
     *   **`console`**: For debugging (ej. `console.log`).
     *   **`stdError`**: Contains standard Solidity errors (ej. `stdError.arithmeticError`).
-*   **`import {Counter} from "../src/Counter.sol";`**: Imports the `Counter` contract to be tested.
+*   **`import {Counter} from "../../src/3_Formatter/Counter.sol";`**: Imports the `Counter` contract to be tested.
 *   **`contract CounterTest is Test { ... }`**: Declaration of the test contract, inheriting from `Test`.
 *   **`setUp()`**: Special function executed before each test function to set up the environment.
 *   **`assertEq(expected, actual, "error message");`**: Assertion function to check if two values are equal. If not, the test fails, and the optional error message is displayed.
